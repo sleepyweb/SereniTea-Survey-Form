@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SereniTea Survey Form</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>SereniTea Survey Form</h1>
+        <p id="description">A soothing and calming blend of premium tea leaves</p>
+
+        <div class="survey-form">
+            <form action="">
+                <fieldset>
+                    <div class="name-email">
+                        <div class="input-info">
+                            <label for="name">Name </label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-info email">
+                            <label for="email">Email </label>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="age-zip-tried">
+                        <div class="input-info age">
+                            <label for="age">Age </label>
+                            <input type="number" id="age" min="15" max="120" placeholder="Optional">
+                        </div>
+                        <div class="input-info pincode">
+                            <label for="Pincode">Pincode </label>
+                            <input type="number" id="pincode" placeholder="Optional">
+                        </div>
+                        <div class="input-info option">
+                            <label for="dropdown" class="option-label"> Which Option You Tried? </label>
+                            <select name="" id="dropdown" class="option-input">
+                                <option value="select-one">Select One</option>
+                                <option value="jasmine-jubilee">Jasmine Jubilee</option>
+                                <option value="minty-zen">Minty Zen</option>
+                                <option value="royal-chai">Royal Chai</option>
+                                <option value="sunset-olong">Sunset Oolong</option>
+                                <option value="peachy-keen">Peachy Keen</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <p>Would you recommend SereniTea to a friend?</p>
+                    <div class="recommend">
+                        <input type="radio" id="definitely" value="definitely" name="recommend" class="radio">
+                        <label for="definitely" class="recommend-label"> Definitely</label>
+                    
+                        <input type="radio" id="maybe" value="maybe" name="recommend" class="radio" >
+                        <label for="maybe" class="recommend-label"> Maybe</label>
+                        
+                        <input type="radio" id="not-sure" value="not-sure" name="recommend" class="radio">
+                        <label for="not-sure" class="recommend-label"> Not sure</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <p>What would you like to see improved? (Check all that apply)</p>
+                    <div class="improved">
+                        <input type="checkbox" id="packaging" value="packaging" class="checkbox">
+                        <label for="packaging" class="improved-label"> Packaging</label>
+                        
+                        <input type="checkbox" id="organic-tea" value="organic-tea" class="checkbox">
+                        <label for="organic-tea" class="improved-label"> Service</label>
+
+                        <input type="checkbox" id="caffeiene-free" value="caffeiene-free" class="checkbox">
+                        <label for="caffeiene-free" class="improved-label"> Ambience</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="suggestions">
+                    <label for="suggestions" class="suggestions-label">Any comments or suggestions?</label>
+                    <textarea name="suggestions" id="suggestions" cols="30" rows="5" class="suggestions-textarea"></textarea>
+                </fieldset>
+
+                <input type="submit" id="submit" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

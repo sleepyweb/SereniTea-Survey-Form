@@ -1,0 +1,201 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+
+    /*== Colors ==*/
+
+    /* HEX Color Code */
+    --body-color: #263159;
+    --form-color: #FFFBEB;
+    --input-color: #495579;
+
+
+    /*== Font and Typoragphy ==*/
+    --body-font: 'Poppins', sans-serif;
+
+    --h1-size: 32px;
+    --font-size: 18px;
+
+    /* heights */
+    --height-30px :30px;
+
+    /* margins */
+    --margin-40px: 40px;
+    --margin-30px: 30px;
+    --margin-20px: 20px;
+    --margin-10px: 10px;
+    --margin-8px: 8px;
+    --margin-5px: 5px;
+
+    /* paddings */
+    --padding-40px: 40px;
+    --padding-30px: 30px;
+    --padding-15px: 15px;
+    --padding-20px: 20px;
+    --padding-10px: 10px;
+    --padding-5px: 5px;
+
+    /* radius */
+    --radius-2px: 2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: var(--body-font);
+    font-size: var(--font-size);
+}
+
+.container {
+    width: 35%;
+    margin: var(--margin-20px) auto;
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+h1, p[id="description"] {
+    margin-bottom: var(--margin-8px);
+    color: var(--form-color);
+    text-align: center;
+}
+
+form {
+    margin-top: var(--margin-20px);
+    padding: var(--padding-30px) var(--padding-20px) var(--padding-40px);
+    background-color: var(--form-color);
+    color: var(--input-color);
+    border-radius: var(--radius-2px);
+}
+
+input, textarea, select {
+    background-color: var(--form-color);
+    color: var(--input-color);
+    border-radius: var(--radius-2px);
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--input-color);
+    outline: none;
+}
+fieldset{
+    padding: var(--padding-15px);
+    overflow: hidden;
+}
+
+.input-info {
+    margin-bottom: var(--margin-10px);
+}
+
+.email {
+    padding-top: var(--padding-15px);
+}
+
+.age-zip-tried{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.age, .pincode, .option {
+    display: grid;
+    padding-right: var(--padding-30px);
+}
+
+.age {
+    width: 100px;
+}
+
+.pincode {
+    width: 150px;
+}
+
+.option-input {
+    width: 100%;
+}
+
+select {
+    width: 150px;
+    background-color: var(--form-color);
+    color: var(--input-color);
+}
+
+.radio, .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: var(--margin-10px);
+}
+
+.recommend, .improved {
+    display: inline;
+    margin: var(--margin-10px) 0;
+}
+
+.suggestions-label {
+    display: block;
+}
+
+.suggestions-textarea {
+    margin-top: 20px;
+    width: 100%;
+    height: 90px;
+}
+
+textarea {
+    background-color: var(--input-color);
+    color: var(--form-color)
+}
+
+input[type="submit"] {
+    display: block;
+    width: 20%;
+    margin: 1em auto;
+    height: var(--height-30px);
+    font-size: var(--body-font);
+    background-color: var(--input-color);
+    color: var(--form-color);
+    min-width: 100px;
+}
+
+.some-class {
+    float: left;
+    clear: none;
+  }
+  
+  label {
+    float: left;
+    clear: none;
+    display: block;
+  }
+  
+  input[type=radio], input[type=checkbox]{
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+    accent-color: var(--input-color);
+  }
+
+.recommend-label, .improved-label {
+    padding-left: var(--padding-5px);
+    padding-right: 60px;
+}
+
+/* Remove Arrows/Spinners */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}.your-class input{
+    float:left;
+}
